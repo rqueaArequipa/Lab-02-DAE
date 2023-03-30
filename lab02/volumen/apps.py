@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class VcylinderConfig(AppConfig):
+class VolumenConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'VCylinder'
+    name = 'volumen'

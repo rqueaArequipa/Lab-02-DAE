@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'index.apps.IndexConfig',
     'OArithmetic.apps.OarithmeticConfig',
-    'VCylinder.apps.VcylinderConfig',
+    'volumen.apps.VolumenConfig',
 ]
 
 MIDDLEWARE = [

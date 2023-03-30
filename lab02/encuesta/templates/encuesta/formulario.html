@@ -14,7 +14,7 @@
 
 </head>
 
-<body class="bg-secondary bg-gradient">
+<body class="bg-black bg-gradient">
 
     <header>
         <div class="px-3 py-2 text-bg-dark">
@@ -39,52 +39,60 @@
                                 Formularios
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/encuesta">Folmulario1</a></li>
-                                <li><a class="dropdown-item" href="#">Formulario2</a></li>
+                                <li><a class="dropdown-item" href="/encuesta">Formulario Encuesta</a></li>
+                                <li><a class="dropdown-item" href="/formulariocalc">Formulario Operaciones Aritmeticas</a></li>
                                 <li>
                                 </li>
-                                <li><a class="dropdown-item" href="#">Formulario3</a></li>
+                                <li><a class="dropdown-item" href="/forVolumen">Formulario Calculo Volumen</a></li>
                             </ul>
                         </li>
-                        <li>
-                            <a href="/encuesta" class="nav-link text-white">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Respuestas
                             </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/encuesta">Respuesta de Encuesta</a></li>
+                                <li><a class="dropdown-item" href="/formulariocalc">Respuesta de Operaciones Aritmeticas</a></li>
+                                <li>
+                                </li>
+                                <li><a class="dropdown-item" href="/forVolumen">Respuesta de Calculo Volumen</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
-    <div class="bg-dark-subtle">
+    <div class="bg-dark bg-gradient">
         <div class="container">
             <section class="p-3">
                 <div class="row mb-3">
-                    <h2 class="modal-title">{{ titulo }}</h2>
+                    <h2 class="modal-title" style="color: rgb(204, 204, 204);">{{ titulo }}</h2>
                 </div>
                 <form class="row g-3" action="{% url 'encuesta:enviar' %}" method="post">
                     {% csrf_token %}
                     <!--Name-->
                     <div class="row mb-3">
-                        <label class="col-sm-2 col-form-label">Nombre:</label>
+                        <label class="col-sm-2 col-form-label" style="color: rgb(204, 204, 204);">Nombre:</label style="color: rgb(204, 204, 204);">
                         <div class="col-sm-5">
-                            <input type="text" class="form-control" id="inputName3" name="nombre">
+                            <input type="text" class="form-control" id="inputName3" name="nombre" style="border: 1px solid rgb(145, 140, 140);" required>
                         </div>
                     </div>
 
                     <!--Password-->
                     <div class="row mb-3">
-                        <label class="col-sm-2 col-form-label">Contraseña:</label>
+                        <label class="col-sm-2 col-form-label" style="color: rgb(204, 204, 204);">Contraseña:</label>
                         <div class="col-sm-5">
-                            <input type="password" class="form-control" id="inputPassword3" name="password">
+                            <input type="password" class="form-control" id="inputPassword3" name="password" style="border: 1px solid rgb(145, 140, 140);" required>
                         </div>
                     </div>
 
                     <!--Educacion-->
                     <div class="row mb-3">
-                        <label class="col-sm-2 col-form-label">Educación:</label>
+                        <label class="col-sm-2 col-form-label" style="color: rgb(204, 204, 204);">Educación:</label>
                         <div class="col-sm-5">
-                            <select class="form-select" aria-label="Default select example" name="educacion">
+                            <select class="form-select" aria-label="Default select example" name="educacion" style="border: 1px solid rgb(145, 140, 140);" required>
                                 <option selected>Educación Obligatoria</option>
                                 <option value="Sin Estudios">Sin Estudios</option>
                                 <option value="Formacion Profesional">Formacion Profesional</option>
@@ -95,20 +103,20 @@
 
                     <!--Nacionalidad-->
                     <div class="row mb-3">
-                        <label class="col-sm-12 col-form-label">Nacionalidad:</label>
+                        <label class="col-sm-12 col-form-label" style="color: rgb(204, 204, 204);">Nacionalidad:</label>
                         <label class="col-sm-2 col-form-label"></label>
                         <div class="col-sm-5">
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="nacionalidad" id="flexRadioDefault1"
-                                    checked value="Hispana">
-                                <label class="form-check-label" for="flexRadioDefault1">
+                                    checked value="Hispana" style="border: 1px solid rgb(145, 140, 140);">
+                                <label class="form-check-label" for="flexRadioDefault1" style="color: rgb(204, 204, 204);">
                                     Hispana
                                 </label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="nacionalidad" id="flexRadioDefault2"
-                                    value="Otra">
-                                <label class="form-check-label" for="flexRadioDefault2">
+                                    value="Otra" style="border: 1px solid rgb(145, 140, 140);">
+                                <label class="form-check-label" for="flexRadioDefault2" style="color: rgb(204, 204, 204);">
                                     Otra
                                 </label>
                             </div>
@@ -117,34 +125,34 @@
 
                     <!--Idiomas-->
                     <div class="row mb-3">
-                        <label class="col-sm-12 col-form-label">Idiomas:</label>
+                        <label class="col-sm-12 col-form-label" style="color: rgb(204, 204, 204);">Idiomas:</label>
                         <label class="col-sm-2 col-form-label"></label>
                         <div class="col-sm-5">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="Español" id="flexCheckDefault"
-                                    name="idiomas">
-                                <label class="form-check-label" for="flexCheckDefault">
+                                    name="idiomas" style="border: 1px solid rgb(145, 140, 140);">
+                                <label class="form-check-label" for="flexCheckDefault" style="color: rgb(204, 204, 204);">
                                     Español
                                 </label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="Inglés" id="flexCheckChecked1"
-                                    name="idiomas">
-                                <label class="form-check-label" for="flexCheckChecked1">
+                                    name="idiomas" style="border: 1px solid rgb(145, 140, 140);">
+                                <label class="form-check-label" for="flexCheckChecked1" style="color: rgb(204, 204, 204);">
                                     Inglés
                                 </label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="Francés" id="flexCheckChecked2"
-                                    name="idiomas">
-                                <label class="form-check-label" for="flexCheckChecked2">
+                                    name="idiomas" style="border: 1px solid rgb(145, 140, 140);">
+                                <label class="form-check-label" for="flexCheckChecked2" style="color: rgb(204, 204, 204);">
                                     Francés
                                 </label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="Alemán" id="flexCheckChecked3"
-                                    name="idiomas">
-                                <label class="form-check-label" for="flexCheckChecked3">
+                                    name="idiomas" style="border: 1px solid rgb(145, 140, 140);">
+                                <label class="form-check-label" for="flexCheckChecked3" style="color: rgb(204, 204, 204);">
                                     Alemán
                                 </label>
                             </div>
@@ -153,16 +161,16 @@
 
                     <!--Email-->
                     <div class="row mb-3">
-                        <label class="col-sm-2 col-form-label">Email:</label>
+                        <label class="col-sm-2 col-form-label" style="color: rgb(204, 204, 204);">Email:</label>
                         <div class="col-sm-5">
-                            <input type="email" class="form-control" id="inputName3" name="email">
+                            <input type="email" class="form-control" id="inputName3" name="email" style="border: 1px solid rgb(145, 140, 140);color: rgb(204, 204, 204);" required>
                         </div>
                     </div>
 
                     <div class="row mb-3">
-                        <label class="col-sm-2 col-form-label">Sitio Web:</label>
+                        <label class="col-sm-2 col-form-label" style="color: rgb(204, 204, 204);">Sitio Web:</label>
                         <div class="col-sm-5">
-                            <input type="text" class="form-control" id="inputName3" name="sitioweb">
+                            <input type="text" class="form-control" id="inputName3" name="sitioweb" style="border: 1px solid rgb(145, 140, 140); color: rgb(204, 204, 204);" required>
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary col-sm-2">Enviar</button>
@@ -173,13 +181,11 @@
     <div class="container">
         <footer class="py-3 my-4">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+                <li class="nav-item"><a href="/" class="nav-link px-2 text-white">Home</a></li>
+                <li class="nav-item"><a href="/encuesta" class="nav-link px-2 text-white">Formularios</a></li>
+                <li class="nav-item"><a href="/encuesta" class="nav-link px-2 text-white">Respuestas</a></li>
             </ul>
-            <p class="text-center text-muted">&copy; 2022 Company, Inc</p>
+            <p class="text-center text-muted">&copy; 2023 QJ - Developer</p>
         </footer>
     </div>
 

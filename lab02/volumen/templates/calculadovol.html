@@ -18,7 +18,7 @@
 
     <header>
         <div class="px-3 py-2 text-bg-dark">
-            <div class="container" >
+            <div class="container">
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                     <a href="/"
                         class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
@@ -66,93 +66,24 @@
     </header>
     <div class="bg-dark bg-gradient">
         <div class="container">
+            <h2 style="font-size: 50px; text-align: center; padding: 50px 0; color: rgb(204, 204, 204);">{{ titulo }}</h2>
+
             <div class="row mb-3">
-                <h2 class="modal-title" style="text-align: center; color: rgb(204, 204, 204);">{{ titulo }}</h2>
-            </div >
-            <table class="table" style="color: rgb(204, 204, 204);">
-                <thead>
-                    <tr>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Clave</th>
-                        <th scope="col">Educación</th>
-                        <th scope="col">Nacionalidad</th>
-                        <th scope="col">Idiomas</th>
-                        <th scope="col">Email</th>
-                        <th scope="col">Sitio Web</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>{{ nombre }}</td>
-                        <td>{{ clave }}</td>
-                        <td>{{ educacion }}</td>
-                        <td>{{ nacionalidad }}</td>
-                        <td>
-                            {% for item in idiomas %}
-                            <li style="list-style-type: none;">{{ item }}</li>
-                            {% endfor %}
-                        </td>
-                        <td>{{ correo }}</td>
-                        <td>{{ website }}</td>
-                    </tr>
-
-                    <tr>
-                        <td>{{ nombre }}</td>
-                        <td>{{ clave }}</td>
-                        <td>{{ educacion }}</td>
-                        <td>{{ nacionalidad }}</td>
-                        <td>
-                            {% for item in idiomas %}
-                            <li style="list-style-type: none;">{{ item }}</li>
-                            {% endfor %}
-                        </td>
-                        <td>{{ correo }}</td>
-                        <td>{{ website }}</td>
-                    </tr>
-
-                    <tr>
-                        <td>{{ nombre }}</td>
-                        <td>{{ clave }}</td>
-                        <td>{{ educacion }}</td>
-                        <td>{{ nacionalidad }}</td>
-                        <td>
-                            {% for item in idiomas %}
-                            <li style="list-style-type: none;">{{ item }}</li>
-                            {% endfor %}
-                        </td>
-                        <td>{{ correo }}</td>
-                        <td>{{ website }}</td>
-                    </tr>
-
-                    <tr>
-                        <td>{{ nombre }}</td>
-                        <td>{{ clave }}</td>
-                        <td>{{ educacion }}</td>
-                        <td>{{ nacionalidad }}</td>
-                        <td>
-                            {% for item in idiomas %}
-                            <li style="list-style-type: none;">{{ item }}</li>
-                            {% endfor %}
-                        </td>
-                        <td>{{ correo }}</td>
-                        <td>{{ website }}</td>
-                    </tr>
-
-                    <tr>
-                        <td>{{ nombre }}</td>
-                        <td>{{ clave }}</td>
-                        <td>{{ educacion }}</td>
-                        <td>{{ nacionalidad }}</td>
-                        <td>
-                            {% for item in idiomas %}
-                            <li style="list-style-type: none;">{{ item }}</li>
-                            {% endfor %}
-                        </td>
-                        <td>{{ correo }}</td>
-                        <td>{{ website }}</td>
-                    </tr>
-                </tbody>
-            </table>
+                <button class="modal-title text-bg-secondary p-3" style="font-size: 30px; text-align: center; padding: 150px 0;">El Volumen del cilindro es de <h1 style="color: black; font-size: 30px;">{{ resultado }}</h1> metros cubicos</button>
+            </div>
+            <div class="row mb-3">
+                <div class="card" style="width: 27rem; height: 15rem;">
+                    <img src="https://1.bp.blogspot.com/-tF3CULUkPaU/XhcpXlO0MtI/AAAAAAAAJKE/ZbH6OizLaLENKharnHRthmecfXqhFNcagCLcBGAsYHQ/s1600/2.jpg" class="card-img-top" alt="..." style="height: 15rem;">
+                </div>
+                <div class="card" style="width: 27rem; height: 15rem;">
+                    <img src="https://tutorias.co/wp-content/uploads/2018/09/sumaDivisionesAscendentesPython-768x489.jpg" class="card-img-top" alt="..." style="height: 15rem;">
+                </div>
+                <div class="card" style="width: 27rem; height: 10rem;">
+                    <img src="https://i.ytimg.com/vi/muApGk7Y5EY/maxresdefault.jpg" class="card-img-top" alt="..." style="height: 15rem;">
+                </div>
+            </div>
+            <br>
+            <br>
         </div>
     </div>
     <div class="container">

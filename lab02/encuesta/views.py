@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 def index(request):
     context = {
-        'titulo' : "Formulario",
+        'titulo' : "Formulario Encuesta",
     }
     return render(request, 'encuesta/formulario.html', context)
 
